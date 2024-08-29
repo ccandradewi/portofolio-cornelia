@@ -10,34 +10,8 @@ import jsPDF from "jspdf";
 const HeroSection: React.FC = () => {
   const pdfRef = useRef<HTMLDivElement | null>(null);
 
-  const downloadPDF = () => {
-    const input = pdfRef.current;
-    if (input) {
-      html2canvas(input).then((canvas) => {
-        const imgData = canvas.toDataURL("image/png");
-        const pdf = new jsPDF("p", "mm", "a4");
-        const pdfWidth = pdf.internal.pageSize.getWidth();
-        const pdfHeight = pdf.internal.pageSize.getHeight();
-        const imgWidth = canvas.width;
-        const imgHeight = canvas.height;
-        const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
-        const imgX = (pdfWidth - imgWidth * ratio) / 2;
-        const imgY = 30;
-        pdf.addImage(
-          imgData,
-          "PNG",
-          imgX,
-          imgY,
-          imgWidth * ratio,
-          imgHeight * ratio
-        );
-        pdf.save("cv.pdf");
-      });
-    }
-  };
-
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-16" ref={pdfRef}>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -60,15 +34,16 @@ const HeroSection: React.FC = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Passionate about coding and building amazing digital experiences
           </p>
-          <div ref={pdfRef}>
-            <button
-              onClick={downloadPDF}
+          <div>
+            <a
+              href="/cv.pdf"
+              download="cv.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
-            </button>
+            </a>
           </div>
         </motion.div>
         <motion.div
