@@ -32,8 +32,8 @@ const projectsData: Project[] = [
       "company profile application for a sushi restaurant named Mizuki Sushi. The website included various information such as the menu, details about the chefs, and other relevant content. The development was done using React.js for the frontend, with Tailwind CSS and Daisy UI for styling, along with CSS, JavaScript, and HTML to structure and enhance the website's functionality.",
     image: "/Mizuki.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ccandradewi/Mizuki-sushi.git",
+    previewUrl: "https://mizuki-sushi.vercel.app/",
   },
   {
     id: 3,
@@ -52,8 +52,8 @@ const projectsData: Project[] = [
       "Ticky is an event management platform that allows organizers to easily create and promote events while offering attendees a seamless experience to browse and register. The development stack included TypeScript, Express, Prisma, MySQL, Next.js, React, Redux, Bootstrap, DaisyUI, Tailwind CSS, and Chart.js for data visualization.",
     image: "/Tickzy.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ccandradewi/mini_project.git",
+    previewUrl: "https://github.com/ccandradewi/mini_project.git",
   },
   {
     id: 5,
@@ -62,8 +62,8 @@ const projectsData: Project[] = [
       "Atcasa is an e-commerce web application that helps users easily find and book rental properties based on their preferred dates. The platform offers a seamless experience for discovering the best accommodations, with dynamic pricing that adjusts based on holidays, weekends, and specific dates set by property owners. The development stack includes TypeScript, Express, Prisma, MySQL, Next.js, React, Redux, Bootstrap, and Chart.js.",
     image: "/Atcasa.png",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ccandradewi/JCWD2704-03.git",
+    previewUrl: "https://jcwd270403.purwadhikabootcamp.com/",
   },
 ];
 
