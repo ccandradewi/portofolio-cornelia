@@ -3,9 +3,7 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-import HeroImage from "../../../public/hero.png";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
+import HeroImage from "../../../public/Hero 1.svg";
 
 const HeroSection: React.FC = () => {
   const pdfRef = useRef<HTMLDivElement | null>(null);
