@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
             </span>
             <br />
             <TypeAnimation
-              sequence={["Cornelia", 5000, "Web Developer", 5000]}
+              sequence={["Cornelia Mustika", 5000, "Web Developer", 5000]}
               wrapper="span"
               speed={10}
               repeat={Infinity}
