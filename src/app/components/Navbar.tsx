@@ -22,7 +22,7 @@ const navLinks: NavLink[] = [
   },
   {
     title: "Contact",
-    path: "#contact",
+    path: "#hero",
   },
 ];
 

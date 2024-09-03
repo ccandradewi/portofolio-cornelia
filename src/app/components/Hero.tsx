@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
   const pdfRef = useRef<HTMLDivElement | null>(null);
 
   return (
-    <section className="lg:py-16" ref={pdfRef}>
+    <section id="hero" className="lg:py-16" ref={pdfRef}>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
