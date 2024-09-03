@@ -4,7 +4,8 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import HeroImage from "../../../public/Hero 1.svg";
-
+import { MdEmail } from "react-icons/md";
+import Contact from "./Contact";
 const HeroSection: React.FC = () => {
   const pdfRef = useRef<HTMLDivElement | null>(null);
 
@@ -32,6 +33,9 @@ const HeroSection: React.FC = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Passionate about coding and building amazing digital experiences
           </p>
+          <div>
+            <Contact />
+          </div>
           <div>
             <a
               href="/cv.pdf"

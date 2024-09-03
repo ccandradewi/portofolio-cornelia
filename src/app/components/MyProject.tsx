@@ -22,8 +22,8 @@ const projectsData: Project[] = [
       "Company profile application for a nail art studio in Semarang called GloryNailart. The website served as a platform to showcase information about their services, a gallery of nail art designs, and contact details. I used WordPress as the main development platform due to its ease of content management and SEO capabilities.",
     image: "/glorynailart.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://glorynailart.shop/",
+    previewUrl: "https://glorynailart.shop/",
   },
   {
     id: 2,
