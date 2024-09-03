@@ -5,7 +5,7 @@ const Contact: React.FC = () => {
     <div className="max-w-screen-xl px-1 py-12 mx-auto space-y-8 overflow-hidden sm:px-3 lg:px-3">
       <div className="flex space-x-6">
         <a
-          href="www.linkedin.com/in/cornelia-mustika-6984ab283"
+          href="https://www.linkedin.com/in/cornelia-mustika-6984ab283"
           className="text-gray-400 hover:text-gray-300"
         >
           <span className="sr-only">LinkedIn</span>
